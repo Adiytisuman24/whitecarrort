@@ -874,9 +874,11 @@ function CandidateDashboard() {
                                       doc.setTextColor(0, 0, 0);
                                       doc.text(`SKILLS ADDED FOR ${optimizationResult.company.toUpperCase()}`, 20, yPos);
                                       
-                                      doc.setFontSize(10);
-                                      doc.setTextColor(34, 197, 94);
-                                      doc.setFont(undefined, 'bold');
+                                      
+                                      doc.setFont('helvetica', 'bold');    // Ensures a valid font name
+doc.setFontSize(10);
+doc.setTextColor(34, 197, 94);
+
                                       const newSkills = optimizationResult.addedSkills.join(', ');
                                       const splitNewSkills = doc.splitTextToSize(newSkills, 170);
                                       doc.text(splitNewSkills, 20, yPos + 8);
