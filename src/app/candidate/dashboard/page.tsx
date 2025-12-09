@@ -876,19 +876,22 @@ function CandidateDashboard() {
                                       
                                       
                                       doc.setFont('helvetica', 'bold');    // Ensures a valid font name
-doc.setFontSize(10);
-doc.setTextColor(34, 197, 94);
+                                      doc.setFontSize(10);
+                                      doc.setTextColor(34, 197, 94);
 
                                       const newSkills = optimizationResult.addedSkills.join(', ');
                                       const splitNewSkills = doc.splitTextToSize(newSkills, 170);
                                       doc.text(splitNewSkills, 20, yPos + 8);
                                       
                                       // AI Recommendations
+                                    
                                       const yPos2 = yPos + 8 + (splitNewSkills.length * 5) + 10;
-                                      doc.setFont(undefined, 'normal');
+
+                                      doc.setFont('helvetica', 'normal');   // FIX: cannot be undefined
                                       doc.setFontSize(14);
                                       doc.setTextColor(0, 0, 0);
                                       doc.text('AI RECOMMENDATIONS', 20, yPos2);
+
                                       
                                       doc.setFontSize(10);
                                       doc.setTextColor(60, 60, 60);
