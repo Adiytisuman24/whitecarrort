@@ -1,14 +1,10 @@
 # 🚀 ATS-Powered Recruitment Platform
 
-
 A comprehensive Applicant Tracking System (ATS) with AI-powered features including resume optimization, DSA testing, camera proctoring, and automated candidate screening.
-
 
 ## ✨ Features
 
-
 ### For Recruiters
-
 - 🏢 **Company-Specific Dashboard** - Secure login with company-restricted access
 - 📝 **Job Management** - Create, edit, and manage job postings
 - 👥 **Candidate Screening** - AI-powered resume matching (auto-reject <80% match)
@@ -314,6 +310,4 @@ For issues and questions:
 ✅ Mobile-responsive design
 
 **The platform is production-ready!** 🚀
-#   w h i t e c a r r o r t 
- 
- 
+#
